@@ -40,8 +40,7 @@ Usage
 Want sessions to automatically expire?
 
     # expire after 12 hours
-    (wrap-session your-app {:store (redis-store store {:expire-secs (*
-    3600 12)})})
+    (wrap-session your-app {:store (redis-store store {:expire-secs (* 3600 12)})})
 
 You can also change the prefix (default to `session`) for the keys in
 redis:
